@@ -483,6 +483,10 @@ $catalogueEs = new MessageCatalogue('es', array (
     'exception.entity_remove' => 'Este elemento no se puede eliminar porque otros elementos dependen de él.',
     'exception.forbidden_action' => 'No se puede realizar la acción solicitada en este elemento.',
   ),
+  'messages' => 
+  array (
+    'Categories' => 'Categorias',
+  ),
 ));
 $catalogue->addFallbackCatalogue($catalogueEs);
 

@@ -23,6 +23,7 @@ class Products
 
     /**
      * @ORM\Column(type="string", length=45, unique=true)     
+     * 
      * @Assert\Regex(
      *     pattern="/^[0-9]{4,10}$/",
      *     match=true,

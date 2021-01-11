@@ -37,14 +37,14 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('Crud Categorias y Productos')
-            ->setTranslationDomain('admin');
+            ->setTitle('Crud Categorias y Productos');
+            // ->setTranslationDomain('admin');
     }
 
     public function configureMenuItems(): iterable
     {
-        // yield MenuItem::linktoDashboard('Inicio', 'fa fa-home');
-        yield MenuItem::linkToCrud('Categorias', 'fa fa-list-alt', Categories::class);
-        yield MenuItem::linkToCrud('Productos', 'fa fa-tag', Products::class);
+        yield MenuItem::linktoDashboard('Home', 'fa fa-home');
+        yield MenuItem::linkToCrud('Categories', 'fa fa-list-alt', Categories::class);
+        yield MenuItem::linkToCrud('Products', 'fa fa-tag', Products::class);
     }    
 }
