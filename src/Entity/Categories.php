@@ -29,7 +29,7 @@ class Categories
      * @Assert\Regex(
      *     pattern="/^[0-9]{4,10}$/",
      *     match=true,
-     *     message="Your code cannot contain special characters"
+     *     message="Tu código no puede contener caracteres especiales"
      * ) 
      */
     private $code;
@@ -38,7 +38,7 @@ class Categories
      * @ORM\Column(type="string", length=45, unique=true)
      * @Assert\Length(
      *      min = 2,
-     *      minMessage = "name must have minimum {{ limit }} characters"
+     *      minMessage = "El nombre debe tener un mínimo {{ limit }} caracteres"
      * )
      */
     private $name;

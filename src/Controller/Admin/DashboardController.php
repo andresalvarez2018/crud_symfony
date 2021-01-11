@@ -16,7 +16,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
 class DashboardController extends AbstractDashboardController
 {
     /**
-     * @Route("/admin", name="admin")
+     * @Route("/", name="")
      */
     public function index(): Response
     {

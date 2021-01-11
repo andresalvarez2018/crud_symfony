@@ -26,14 +26,14 @@ class Products
      * @Assert\Regex(
      *     pattern="/^[0-9]{4,10}$/",
      *     match=true,
-     *     message="Your code cannot contain special characters"
+     *     message="Tu código no puede contener caracteres especiales"
      * ) 
      * 
      * @Assert\Length(
      *      min = 4,
      *      max = 10,
-     *      minMessage = "code must have minimum {{ limit }} characters",
-     *      maxMessage = "code must have maximum {{ limit }} characters"
+     *      minMessage = "El código debe tener un mínimo {{ limit }} caracteres",
+     *      maxMessage = "El código debe tener un máximo {{ limit }} caracteres"
      * )
      * 
      */
@@ -43,7 +43,7 @@ class Products
      * @ORM\Column(type="string", length=45, unique=true)
      * @Assert\Length(
      *      min = 4,
-     *      minMessage = "name must have minimum {{ limit }} characters"
+     *      minMessage = "El nombre debe tener un mínimo {{ limit }} caracteres"
      * )
      */
     private $name;
